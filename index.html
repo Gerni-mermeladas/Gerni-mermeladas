@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GERNI - Mermeladas Caseras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8c471;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #e67e22;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #f8c471;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GERNI - Mermeladas Caseras</h1>
+    </header>
+
+    <nav>
+        <a href="#intro">Inicio</a>
+        <a href="#about">Nosotros</a>
+        <a href="#products">Nuestro Producto</a>
+        <a href="#pricing">Precios</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <section id="intro">
+        <h2>Bienvenidos a GERNI</h2>
+        <p>Descubre nuestras deliciosas mermeladas caseras hechas con ingredientes frescos y naturales. Cada frasco está lleno de sabor y amor.</p>
+    </section>
+
+    <section id="about">
+        <h2>Nosotros</h2>
+        <p>En GERNI, nos dedicamos a crear mermeladas artesanales que combinan tradición y calidad. Nuestra pasión es ofrecer productos únicos para acompañar tus desayunos y meriendas.</p>
+    </section>
+
+    <section id="products">
+        <h2>Nuestro Producto</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/100" alt="Arándanos">
+                <h3>Arándanos</h3>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/100" alt="Piña">
+                <h3>Piña</h3>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/100" alt="Higo">
+                <h3>Higo</h3>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/100" alt="Fresa">
+                <h3>Fresa</h3>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/100" alt="Durazno">
+                <h3>Durazno</h3>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/100" alt="Mango">
+                <h3>Mango</h3>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/100" alt="Manzana">
+                <h3>Manzana</h3>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/100" alt="Tomate">
+                <h3>Tomate</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Precios</h2>
+        <p>¡Todas nuestras mermeladas tienen un precio único de <strong>15 soles</strong> por frasco!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas o quieres hacer un pedido? Contáctanos llenando el formulario a continuación:</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <textarea placeholder="Mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 GERNI - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
